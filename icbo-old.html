@@ -16,11 +16,13 @@
 <title>
   
   
-    Welcome to the website of the BOS!
+    
+      ICBO | Welcome to the website of the BOS!
+    
   
 </title>
 <meta name="author" content="Bilevel Optimization Society">
-<meta name="description" content="">
+<meta name="description" content="The international conference on bilevel optimization">
 
 
 
@@ -49,20 +51,13 @@
 
 <!-- Styles -->
 
-<style>
-.list-group-item.active {
-  z-index: 2;
-  color: #2400ff;
-  background-color: rgba(160,178,234,0.16);
-  border-color: #007bff;
-}
-</style>
+
 
 
   <link rel="shortcut icon" href="/assets/img/icon.png?422466d79489b01f1429084fc6d7e54f">
 
 <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://localhost:4000/icbo">
 
 <!-- Dark Mode -->
 <script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
@@ -87,59 +82,162 @@
   <body class="fixed-top-nav ">
     <!-- Header -->
     <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/">
+          
+            Bilevel Optimization Society
+          
+        </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">The BOS
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/cobos/">Organization
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/membership/">Membership
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="/icbo">ICBO
+                    
+                      <span class="sr-only">(current)</span>
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
   
 </header>
 
 
     <!-- Content -->
-    <div class="container mt-0" role="main">
-	
-	<div class="row">
-		<div class="col-4">
-			<div class="sticky-top">
-			 <figure>
-			  <picture>
-				<!-- Auto scaling with imagemagick -->
-				<!--
-				  See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-				  https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-				-->
-				
-				  <source class="responsive-img-srcset" srcset="/assets/img/prof_pic.png 480w,/assets/img/prof_pic.png 800w,/assets/img/prof_pic.png 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px)
-				  30vw, 95vw">
-				
-			  <img src="{{ '/assets/img/prof_pic.png' | relative_url }}" alt="Profile picture"
-				 style="background: transparent; border-radius: 0; box-shadow: none; width: 100%; height: auto;">
-
-			  
-			  </source></picture>
-
-			  
-			 </figure>
-			 <div class="row">
-				<div class="col">
-				</div>
-			 </div>
-			 <div class="list-group">
-				  <a href="/" class="list-group-item list-group-item-action active">
-					The BOS
-				  </a>
-				  <a href="/cobos/" class="list-group-item list-group-item-action">Organization</a>
-				  <a href="/membership/" class="list-group-item list-group-item-action">Membership</a>
-				  <a href="/icbo" class="list-group-item list-group-item-action">ICBO</a>
-				  <a class="list-group-item list-group-item-action" title="Search" onclick="openSearchModal()">
-					ctrl k <i class="ti ti-search"></i>
-				  </a>
-				</div>
-			</div>
-			
-		</div>
-		<div class="col-8">
-			
-		</div>
-	</div>
+    <div class="container mt-5" role="main">
       
-        
+        <div style="text-align: justify;">
+
+
+<h3> The International Conference on Bilevel Optimization </h3>
+
+<p>The ICBO is a bi-annual conference on bilevel optimization with the goal to highlight recent advances and trends in the field. The conferences will usually consist of a set of invited plenary speakers as well as of sessions of contributed talks. Its aim is to bring together junior and senior researchers in the field of bilevel optimization as well as practitioners using bilevel optimization.</p>
+
+
+<h3> Open Call </h3>
+
+
+<p>Dear BOS members,</p>
+
+
+<p>As the Conference Site Advisory Committee (CSAC) of the Bilevel Optimization Society (BOS), we are pleased to announce a first call of interest to host the first International Conference on Bilevel Optimization (ICBO) to be held in 2026.</p>
+
+
+<p>This conference represents a continuation and merger of two previous initiatives: the International Workshop on Bilevel Programming (IWOBIP) and the ICBO, which was organized in Southampton to celebrate the 60th anniversary of Stephan Dempe. Typically, this conference has an attendance of between 50-100 researchers. </p>
+
+
+<p>Interested candidates are invited to write to bileveloptimizationsociety@gmail.com with at most three paragraphs expressing their will to organize this event. Formal proposals will be invited following the expressions of interest.</p>
+
+
+<p>The deadline for the expressions of interest will be until March 16th, 2025. </p>
+
+
+<p>Best</p>
+
+</div>
 
       
     </div>
