@@ -50,30 +50,4 @@ ninja.data = [{
           section: "News",},{id: "news-call-for-nominations-of-chair-elect-call-for-nominations-for-the-position-of-chair-elect-of-the-committee-of-the-bilevel-optimization-society-cobos",
           title: 'Call for nominations of Chair-Elect ! Call for Nominations for the position of...',
           description: "",
-          section: "News",},{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+          section: "News",},];
