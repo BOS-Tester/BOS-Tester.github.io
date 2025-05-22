@@ -67,6 +67,13 @@
   background-color: rgba(160,178,234,0.16);
   border-color: #007bff;
 }
+#navbar { 
+display:none; 
+}
+@media screen and (max-width: 500px) {
+#navbar { 
+display:block; }
+}
 </style>
 
 
@@ -99,7 +106,7 @@
     <!-- Header -->
     <header>
 	  <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top d-sm-none" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
     <div class="container">
       
       <!-- Navbar Toggle -->
@@ -201,7 +208,7 @@
 
 
     <!-- Content -->
-    <div class="container mt-5" role="main">
+    <div class="container mt-0" role="main">
 	
 	<div class="row">
 		<div class="col-sm-4">
