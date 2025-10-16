@@ -1,0 +1,136 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+}
+
+/* Visited headers should not change colour */
+h2 a:visited, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited {
+    color: inherit;
+}
+
+
+/* Default CSS for the main text */
+html, body, .body {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: rgba(12, 73, 100, .92);
+    font-family: Arial, sans-serif;
+
+    /* Override Cesium hidden overflow property so we get scrollbar */
+    overflow: auto !important;
+}
+
+.footer-logo-title {
+    font-size: 12px;
+}
+
+/* Default CSS for the main text */
+p, .p {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: inherit;
+    font-family: Arial, sans-serif;
+
+    /* Override Cesium hidden overflow property so we get scrollbar */
+    overflow: auto !important;
+}
+
+/* ========================================================================== */
+/* Background colours                                                         */
+/* ========================================================================== */
+
+.background-marine-1 {
+    color: #ffffff;
+    background-color: #005C84; /* Marine 1 */
+    /*border-color: #4D8DA9; !* Marine 1: 70% Tint *!*/
+    border-color: transparent;
+}
+.background-shamrock {
+    color: #ffffff;
+    background-color: #1E8765; /* Shamrock */
+    /*border-color: #62AB93; !* Shamrock: 70% Tint *!*/
+    border-color: transparent;
+}
+.background-coral {
+    color: #FFFFFF;
+    background-color: #E73238; /* Coral */
+}
+/* Colour used for navbar background */
+.background-prussian {
+    color: #FFFFFF;
+    background-color: #002E3B; /* Prussian */
+}
+
+.background-neutral-2 {
+    color: #FFFFFF;
+    background-color: #9FB1BD; /* Neutral 2 */
+}
+.background-neutral-3 {
+    color: #FFFFFF;
+    background-color: #758D9A; /* Neutral 3 */
+}
+
+
+.buffer {
+    margin-top: 20px;
+}
+
+.header {
+    padding-bottom: 30px;
+}
+
+
+/* Navbar items should be white with subtle colour change on mouse-over */
+.navbar-nav > li > a {
+    color: #ffffff
+}
+.navbar-nav > li > a:hover {
+    color: #E1E8EC; /* Neutral 4 */
+}
+
+.header-image {
+    width: 100%;
+    margin: -20px 0px 20px 0px;
+}
+
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-img {
+    max-height: 40px;
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+.btn-success {
+    color: white !important;
+}
+
+.traceback {
+    font-size: smaller;
+    font-family: monospace; !important;
+}
+
+.quiet-link {
+    text-decoration: none;
+}
+
+.btn-update {
+    background-color: orange;
+    color: white;
+}
+.btn-delete {
+    background-color: maroon;
+    color: white;
+}
+.btn-create {
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Override floaty forms */
+.card-body {
+    padding-bottom: 0rem !important;
+}
